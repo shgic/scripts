@@ -41,7 +41,7 @@ Start-Sleep -Seconds 1
 
 $powershell_common_file_name = "common.ps1";
 $powershell_common_file_path = (Split-Path -Parent $MyInvocation.MyCommand.Definition) + "\" + $powershell_common_file_name;
-$powershell_common_file_uri = "https://raw.githubusercontent.com/shgic/script/main/powershell/common.ps1";
+$powershell_common_file_uri = "https://raw.githubusercontent.com/shgic/scripts/master/powershell/common.ps1";
 $web_client_object = New-Object System.Net.WebClient;
 $web_client_object.Proxy = [System.Net.GlobalProxySelection]::GetEmptyWebProxy() 
 
